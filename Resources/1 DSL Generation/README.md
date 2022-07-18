@@ -1,8 +1,8 @@
-%%Code
+## Code
 
 Ecore, Xtext and Xtend files to create the System Specifications file (.mysdl file) in the proposed DSL.
 
-%% Example
+## Example
 
 When saved, it generate three files:
 - modelAllocation.als
