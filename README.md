@@ -20,7 +20,7 @@ Make sure you add the environmental variable in __Run Conconfigurations__, on IO
 and on Linux:
 - LD_LIBRARY_PATH = libs/runtime
 
-You can now run ```RunApp.java``` from your here or your own project.
+You can now run ```RunApp.java``` directly or from your own project.
 
 ### Side note:
 This is the first version of the end-to-end Kanoa tool, we appreciate reporting any bugs and ask any related questions.
