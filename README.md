@@ -7,6 +7,7 @@ Multi-robot task allocation and scheduling tool. The code is provided in Resourc
 ### DSL
 We provide a user-friendly DSL for the adoption of Kanoa. We use EclipseEMF Modeling Tools Version: 2020-12 (4.18.0), project execution environment 'JavaSE-11' (Java SE 18 [18]).
 
+The code is provided in Resources>Source>DSL.
 
 ### Task Allcoation and Scheduling
 We tested Kanoa on Eclipse IDE Version: 2022-06 (4.24.0), project execution environment 'JavaSE-1.8' (JRE[17.0.2]).
