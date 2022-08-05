@@ -23,7 +23,7 @@ at2_floor_9,,ct1_clean_5,,NaN,,room4,,NaN,,False,,False,,True
 at3_sanit_10,,ct1_clean_5,,NaN,,room4,,NaN,,False,,False,,True
 m6,,NaN,,['ct2_patient_6'],,NaN,,NaN,,NaN,,NaN,,NaN
 ct2_patient_6,,m6,,['at4_notify_11','ct1_clean_7'],,room5,,NaN,,NaN,,True,,False
-at4_notify_11,,ct2_patient_6,,NaN,,room5,,NaN,,False,,True,,False
+at4_notify_11,,ct2_patient_6,,NaN,,room5,,NsaN,,False,,True,,False
 ct1_clean_7,,ct2_patient_6,,['at2_floor_12','at3_sanit_13'],,room5,,NaN,,NaN,,False,,True
 at2_floor_12,,ct1_clean_7,,NaN,,room5,,NaN,,False,,False,,True
 at3_sanit_13,,ct1_clean_7,,NaN,,room5,,NaN,,False,,False,,True
