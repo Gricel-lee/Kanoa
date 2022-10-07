@@ -86,8 +86,9 @@ public class PlanScheduler extends AbstractAlgorithmRunner{
 		
 		// d) read and save solutions
 		//List<IntegerSolution> populationSolution = algorithm.getResult() ;
-		List<IntegerSolution> populationSolution = algorithm.getResult().stream().filter(
+		//List<IntegerSolution> populationSolution = algorithm.getResult().stream().filter(
 		        ConstraintHandling::isFeasible).collect(Collectors.toList());
+		List<IntegerSolution> populationSolution =  (List<IntegerSolution>)(Object) algorithm.getResult().stream().filter(ConstraintHandling::isFeasible).collect(Collectors.toList()); 
 		
 		// - print info and save 
 		Utility.WriteToFile(Constants.optimisedSolutionsData, "prob,idle,travel,feasible,allocation,clusters,permutation");
