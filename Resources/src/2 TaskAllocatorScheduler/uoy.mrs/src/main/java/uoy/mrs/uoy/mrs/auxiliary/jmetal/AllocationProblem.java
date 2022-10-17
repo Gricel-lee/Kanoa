@@ -96,11 +96,11 @@ public class AllocationProblem extends AbstractIntegerProblem {
 		
 		
 		// 1) get genes as string
-		String genesString = Aux.getGenesString(solution);
+		String genesString = Auxx.getGenesString(solution);
 		System.out.println("\n- Genes:" + genesString + " - " + this.allocation.name);
 		
 		// 2) evaluate gene
-		double[] res = Aux.evalChromosomeMDP(solution,genesString,allocation,PRISM); //results
+		double[] res = Auxx.evalChromosomeMDP(solution,genesString,allocation,PRISM); //results
 			
 		// 3) save results to solution object
 		solution.objectives()[0] = res[0];
