@@ -23,6 +23,10 @@ on Linux:
 
 and on Windows:
 - add in the environmental variable PATH the path to the libs/runtime folder on your project
+- add in Build Path > Libraries > JRE Sys Lib > Native library location > ***External folder*** > "C:/...your path Kanoa-main/uoy.mrs/libs/runtime"
+
+![image](https://user-images.githubusercontent.com/63869574/196206022-52ea3e08-5843-469d-9582-095b53421aaf.png)
+
 
 You can now run ```RunApp.java``` directly or from your own project.
 
