@@ -30,7 +30,7 @@ public class AllocationScheduler extends AbstractAlgorithmRunner{
 	
 	// 2) run for all allocations
 	public static void run() {
-		Aux.saveFile(); // initiate solutions file
+		Auxx.saveFile(); // initiate solutions file
 		// - run GA for each allocations
 		for (Allocation a: allocations) {
 			runner(a);
