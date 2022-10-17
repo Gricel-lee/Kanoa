@@ -25,7 +25,7 @@ import uoy.mrs.uoy.mrs.types.SolutionData;
  * @author gris
  *
  */
-public class Aux {
+public class Auxx {
 	
 	public static String getGenesString(IntegerSolution solution) {
 		String str = "(";
