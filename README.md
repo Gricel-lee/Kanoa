@@ -18,8 +18,11 @@ It was developed as a Maven project. Make sure that the following Libraries are 
 Make sure you add the environmental variable in __Run Conconfigurations__, on IOs:
 - DYLD_LIBRARY_PATH = libs/runtime
 
-and on Linux:
+on Linux:
 - LD_LIBRARY_PATH = libs/runtime
+
+and on Windows:
+- add in the environmental variable PATH the path to the libs/runtime folder on your project
 
 You can now run ```RunApp.java``` directly or from your own project.
 
