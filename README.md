@@ -1,4 +1,4 @@
-# Kanoa
+# KANOA (tasK specifications And heterogeNeous rObot teAms)
 
 Multi-robot task allocation and scheduling tool. The code is provided in Resources>Source.
 
