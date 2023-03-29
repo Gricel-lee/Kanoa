@@ -11,7 +11,7 @@ We provide a user-friendly DSL for the adoption of Kanoa. We use EclipseEMF Mode
 
 
 
-## Xtext (DSL code) Set up in Eclipse
+## 1 Xtext (DSL code) Set up in Eclipse
 
 ***DSL code is provided in Resources>Source>1 DSL Generation***
 
@@ -22,7 +22,7 @@ Install the plugins Xtext and Xtend (Help> Eclipse Marketplace).
 (Instructions to upload the DSL code into Eclipse are similar to: https://github.com/Gricel-lee/Quartet-MRS-DSL/blob/main/README.md)
 
 
-### 2.1 Create Ecore model
+### 1.1 Create Ecore model
 
 Create a new Empty EMF project.
 
@@ -66,7 +66,7 @@ Right click on each of the folders (plugins) and click Configure > Convert to Xt
 
 ![image](https://user-images.githubusercontent.com/63869574/157303845-8cd6cb9f-80db-42c2-ad7e-1d932fd38e97.png)
 
-### 2.2 Create Xtext model
+### 1.2 Create Xtext model
 
 Go to File > New > Other > Xtext > Xtext Project From Existing Ecore Models > Add the .genmodel and select **ProblemSpecification as Entry rule** > Next > Finish
 (Make sure ProblemSpecifications is the entry rule or it would create a different root for the model).
@@ -103,7 +103,7 @@ Note: Sometimes the project needs to be refreshed or cleaned to get the output f
 
 
 
-## Task Allcoation and Scheduling
+## 2 Task Allcoation and Scheduling
 We tested Kanoa on Eclipse IDE Version: 2022-06 (4.24.0), project execution environment 'JavaSE-1.8' (JRE[17.0.2]).
 
 It was developed as a Maven project. Make sure that the following Libraries are uploaded as part the pom.xml file:
@@ -126,6 +126,6 @@ You can now run ```RunApp.java``` directly or from your own project.
 
 
 
-### Side note:
+# Side note:
 This is the first version of the end-to-end Kanoa tool, we appreciate reporting any bugs and ask any related questions.
 Enjoy!
