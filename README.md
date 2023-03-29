@@ -9,6 +9,9 @@ We provide a user-friendly DSL for the adoption of Kanoa. We use EclipseEMF Mode
 
 The code is provided in Resources>Source>DSL.
 
+Instructions to upload the DSL code into Eclipse are similar to: https://github.com/Gricel-lee/Quartet-MRS-DSL/blob/main/README.md
+
+
 ### Task Allcoation and Scheduling
 We tested Kanoa on Eclipse IDE Version: 2022-06 (4.24.0), project execution environment 'JavaSE-1.8' (JRE[17.0.2]).
 
