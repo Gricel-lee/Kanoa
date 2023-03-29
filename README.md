@@ -2,21 +2,108 @@
 
 Multi-robot task allocation and scheduling tool. The code is provided in Resources>Source.
 
-## Installation
-
-### DSL
 We provide a user-friendly DSL for the adoption of Kanoa. We use EclipseEMF Modeling Tools Version: 2020-12 (4.18.0), project execution environment 'JavaSE-11' (Java SE 18 [18]).
 
-The code is provided in Resources>Source>DSL.
 
-Instructions to upload the DSL code into Eclipse are similar to: https://github.com/Gricel-lee/Quartet-MRS-DSL/blob/main/README.md
-in step 2, select ProblemSpecification as the Entry rule:
+
+***DSL code is provided in Resources>Source>1 DSL Generation***
+***Task allocation code is provided in Resources>Source>2 TaskAllocatorScheduler***
+
+
+
+## Xtext (DSL code) Set up in Eclipse
+
+***DSL code is provided in Resources>Source>1 DSL Generation***
+
+To use Quartet, you must have installed EMF and SDK (already installed for EMF). It can be installed via Help>Install New Software> Work with: 2022-09 - http://download.eclipse.org/releases/2022-09/ [or your Eclipse verison downaload page] > Modelling > Select EMF - Eclipse Modeling Framework SDK and the Ecore Diagram Editor (SDK).
+
+Install the plugins Xtext and Xtend (Help> Eclipse Marketplace).
+
+(Instructions to upload the DSL code into Eclipse are similar to: https://github.com/Gricel-lee/Quartet-MRS-DSL/blob/main/README.md)
+
+
+### 2.1 Create Ecore model
+
+Create a new Empty EMF project.
+
+![image](https://user-images.githubusercontent.com/63869574/157302815-76010dfd-5cc3-4748-8a54-599e32c91b28.png)
+
+Project name: se.gu.uoy.dsl > Finish
+
+Right click on model folder and create a new Ecore Model:
+
+![image](https://user-images.githubusercontent.com/63869574/157302954-64ee4b16-b2e1-4cc2-ad83-f8cd034a3cb5.png)
+
+![image](https://user-images.githubusercontent.com/63869574/157302995-35c49c86-dd84-427c-b213-3ef4b93f1a59.png)
+
+File name: quantitativePatterns.ecore > Finish
+
+![image](https://user-images.githubusercontent.com/63869574/157303148-d87b5443-1f5c-48d6-a9f7-ca6b67a7c945.png)
+
+Replace this file with the one provided here in Github.
+
+Right click on the Ecore Model and create a new EMF Generator Model> Next > Next > Ecore model > Select the Ecore File and click Load > Next > Finish
+
+![image](https://user-images.githubusercontent.com/63869574/157303557-c53455a1-9242-43f8-93ce-e0fbebc55e20.png)
+
+![image](https://user-images.githubusercontent.com/63869574/157303582-9bec7d30-45da-4cf8-b034-066927108cd8.png)
+
+![image](https://user-images.githubusercontent.com/63869574/157303629-c46f8f66-a32a-4e94-a911-956a7dfb0e36.png)
+
+![image](https://user-images.githubusercontent.com/63869574/157303651-3ffd446b-2b8b-4c2a-9bae-269c15bfb300.png)
+
+![image](https://user-images.githubusercontent.com/63869574/157303676-8369f471-cfd5-418e-ad95-660df05fdb02.png)
+
+This should create the .genmodel. Right click at the root of the .genmodel and select Generate All.
+
+![image](https://user-images.githubusercontent.com/63869574/157303738-2fc08257-0cf5-47e5-870c-a1571508725b.png)
+
+It should have created edit, editor and tests folders:
+
+![image](https://user-images.githubusercontent.com/63869574/157303770-a5cae357-5b30-4dd0-9d98-a9c67297117c.png)
+
+Right click on each of the folders (plugins) and click Configure > Convert to Xtext Project
+
+![image](https://user-images.githubusercontent.com/63869574/157303845-8cd6cb9f-80db-42c2-ad7e-1d932fd38e97.png)
+
+### 2.2 Create Xtext model
+
+Go to File > New > Other > Xtext > Xtext Project From Existing Ecore Models > Add the .genmodel and select **ProblemSpecification as Entry rule** > Next > Finish
+(Make sure ProblemSpecifications is the entry rule or it would create a different root for the model).
+
+![image](https://user-images.githubusercontent.com/63869574/157304022-08fef1ad-3a43-4f4f-aabd-13ee6c6224ef.png)
 
 ![Screenshot 2023-03-29 at 11 52 54](https://user-images.githubusercontent.com/63869574/228511867-6f5aa0f8-0f42-439e-bb4f-8dc8f93a7c7f.jpg)
 
 
+It should generate 4 new plugins:
 
-### Task Allcoation and Scheduling
+![image](https://user-images.githubusercontent.com/63869574/157304117-8c0b7fd3-b38c-4126-b9e8-8cc52e0ddc05.png)
+
+Replace these folders with the ones provided here in Github. You'd need to change ```var path_sigAlloyDeclaration``` in MyDslGenerator.xtend to your own directory path.
+
+- (**ERROR1.** If replacing causes problems, try replacing the content in mydsl/MyDsl.xtext (```org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDsl.xtext```), then right click> Run as> 1 Generate Xtext Artifacts. Three new subfolder must appear: .formatting2, .generator, .scoping and .validation. Go to the second, example.mydsl.generator (```org.xtext.example.mydsl/src/org/xtext/example/mydsl/generator/MyDslGenerator.xtend```), and copy the 3 .txt files. Finally replace MyDslGenerator.xtend in the same folder.)
+- (**ERROR2.** If an error appears in **Files.readString** it may be because of using JavaSE<11. Go to Project Properties > Java Build Path> Libraries > Add Library > JRE System Library > Execution environment> JavaSE-11(jdk19) )
+
+Right click on the .xtext file on the src folder (of the first plugin) > Run As > 1 Generate Xtext artifacts
+Right click on the .mwe2 file on the src folder (of the first plugin) > Run As > MWE2:
+
+![image](https://user-images.githubusercontent.com/63869574/157304320-169262e6-d270-4230-89b5-a93961967b0c.png)
+
+
+
+
+### Run example
+
+Note: Sometimes the project needs to be refreshed or cleaned to get the output file:
+
+<img width="193" alt="Screenshot 2022-07-12 at 16 03 08" src="https://user-images.githubusercontent.com/63869574/178522451-ca18c2bb-c6de-42a7-b5d7-f6b3de2bf7a7.png">
+
+
+
+
+
+## Task Allcoation and Scheduling
 We tested Kanoa on Eclipse IDE Version: 2022-06 (4.24.0), project execution environment 'JavaSE-1.8' (JRE[17.0.2]).
 
 It was developed as a Maven project. Make sure that the following Libraries are uploaded as part the pom.xml file:
@@ -36,6 +123,8 @@ and on Windows:
 
 
 You can now run ```RunApp.java``` directly or from your own project.
+
+
 
 ### Side note:
 This is the first version of the end-to-end Kanoa tool, we appreciate reporting any bugs and ask any related questions.
