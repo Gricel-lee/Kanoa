@@ -95,6 +95,8 @@ Right click on the .mwe2 file on the src folder (of the first plugin) > Run As >
 
 Right click on the first folder (org.xtext.example.mydsl) > Run as > Run Configuration > Eclipse Application > Launch Runtime Eclipse
 
+Now you can create a new project, create a new file with extension .mydls, and when saved, it automatically generates files
+
 ### Note
 Note: Sometimes the project needs to be refreshed or cleaned to get the output file:
 
