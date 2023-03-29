@@ -85,16 +85,14 @@ Replace these folders with the ones provided here in Github. You'd need to chang
 - (**ERROR1.** If replacing causes problems, try replacing the content in mydsl/MyDsl.xtext (```org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDsl.xtext```), then right click> Run as> 1 Generate Xtext Artifacts. Three new subfolder must appear: .formatting2, .generator, .scoping and .validation. Go to the second, example.mydsl.generator (```org.xtext.example.mydsl/src/org/xtext/example/mydsl/generator/MyDslGenerator.xtend```), and copy the 3 .txt files. Finally replace MyDslGenerator.xtend in the same folder.)
 - (**ERROR2.** If an error appears in **Files.readString** it may be because of using JavaSE<11. Go to Project Properties > Java Build Path> Libraries > Add Library > JRE System Library > Execution environment> JavaSE-11(jdk19) )
 
+### 1.3 Run example
+
 Right click on the .xtext file on the src folder (of the first plugin) > Run As > 1 Generate Xtext artifacts
 Right click on the .mwe2 file on the src folder (of the first plugin) > Run As > MWE2:
 
 ![image](https://user-images.githubusercontent.com/63869574/157304320-169262e6-d270-4230-89b5-a93961967b0c.png)
 
-
-
-
-### Run example
-
+### Note
 Note: Sometimes the project needs to be refreshed or cleaned to get the output file:
 
 <img width="193" alt="Screenshot 2022-07-12 at 16 03 08" src="https://user-images.githubusercontent.com/63869574/178522451-ca18c2bb-c6de-42a7-b5d7-f6b3de2bf7a7.png">
@@ -105,6 +103,9 @@ Note: Sometimes the project needs to be refreshed or cleaned to get the output f
 
 ## 2 Task Allcoation and Scheduling
 We tested Kanoa on Eclipse IDE Version: 2022-06 (4.24.0), project execution environment 'JavaSE-1.8' (JRE[17.0.2]).
+
+
+***Task allocation code is provided in Resources>Source>2 TaskAllocatorScheduler***
 
 It was developed as a Maven project. Make sure that the following Libraries are uploaded as part the pom.xml file:
 ![Screenshot 2022-08-03 at 01 53 11](https://user-images.githubusercontent.com/63869574/182501198-00b894b8-d11c-48a2-91cf-33b5a827c4e7.png)
