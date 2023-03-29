@@ -10,6 +10,10 @@ We provide a user-friendly DSL for the adoption of Kanoa. We use EclipseEMF Mode
 The code is provided in Resources>Source>DSL.
 
 Instructions to upload the DSL code into Eclipse are similar to: https://github.com/Gricel-lee/Quartet-MRS-DSL/blob/main/README.md
+in step 2, select ProblemSpecification as the Entry rule:
+
+![Screenshot 2023-03-29 at 11 52 54](https://user-images.githubusercontent.com/63869574/228511867-6f5aa0f8-0f42-439e-bb4f-8dc8f93a7c7f.jpg)
+
 
 
 ### Task Allcoation and Scheduling
