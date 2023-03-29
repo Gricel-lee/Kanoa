@@ -91,7 +91,9 @@ Right click on the .xtext file on the src folder (of the first plugin) > Run As 
 
 Right click on the .mwe2 file on the src folder (of the first plugin) > Run As > MWE2 (```org.xtext.example.mydsl/src/org/xtext/example/mydsl/GenerateMyDsl.mwe2```):
 
-![image](https://user-images.githubusercontent.com/63869574/157304320-169262e6-d270-4230-89b5-a93961967b0c.png)
+![image](https://user-images.githubusercontent.com/63869574/228543118-6880cc02-5a48-4547-8277-79f3015264fd.jpeg)
+
+Right click on the first folder (org.xtext.example.mydsl) > Run as > Run Configuration > Eclipse Application > Launch Runtime Eclipse
 
 ### Note
 Note: Sometimes the project needs to be refreshed or cleaned to get the output file:
