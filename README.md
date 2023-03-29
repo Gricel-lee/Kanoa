@@ -88,6 +88,7 @@ Replace these folders with the ones provided here in Github. You'd need to chang
 ### 1.3 Run example
 
 Right click on the .xtext file on the src folder (of the first plugin) > Run As > 1 Generate Xtext artifacts
+
 Right click on the .mwe2 file on the src folder (of the first plugin) > Run As > MWE2:
 
 ![image](https://user-images.githubusercontent.com/63869574/157304320-169262e6-d270-4230-89b5-a93961967b0c.png)
