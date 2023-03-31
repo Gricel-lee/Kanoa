@@ -46,7 +46,7 @@ Right click on the Ecore Model and create a new EMF Generator Model> Next > Next
 
 ![image](https://user-images.githubusercontent.com/63869574/157303557-c53455a1-9242-43f8-93ce-e0fbebc55e20.png)
 
-![image](https://user-images.githubusercontent.com/63869574/157303582-9bec7d30-45da-4cf8-b034-066927108cd8.png)
+![image](https://user-images.githubusercontent.com/63869574/229150387-c6d72305-4262-47c5-a3f6-21d99f823354.jpeg)
 
 ![image](https://user-images.githubusercontent.com/63869574/157303629-c46f8f66-a32a-4e94-a911-956a7dfb0e36.png)
 
