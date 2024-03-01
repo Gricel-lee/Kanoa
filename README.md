@@ -109,7 +109,8 @@ Note: Sometimes the project needs to be refreshed or cleaned to get the output f
 <img width="193" alt="Screenshot 2022-07-12 at 16 03 08" src="https://user-images.githubusercontent.com/63869574/178522451-ca18c2bb-c6de-42a7-b5d7-f6b3de2bf7a7.png">
 
 
-
+- (**ERROR3.** ```Can't load library: /Users/.../.swt/lib/macosx/aarch64/libswt-cocoa-4954r7.jnilib``` This error is detected in Mac M1 processor. For our application, changing Run Configuration of our Eclipse Application setup to run on Java J2SE-1.4 (JRE[17.0.5]) helped. This problem is with the processor outside the scope of this project.
+![image](https://github.com/Gricel-lee/Kanoa/assets/63869574/be039c0a-512d-4559-96a0-7e5a9503a2d0)
 
 
 ## 2 Task Allcoation and Scheduling
